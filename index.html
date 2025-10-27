@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Hotline</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+      <div class="logo-wrap">
+        <!-- simple logo circle -->
+        <div class="site-logo">
+         <img src="./assets/logo.png" alt="">
+        </div>
+       
+          <div class="title">Emergency <br>Service</div>
+         
+       
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <div class="stat">
+        <span class="heart-emoji">💗</span>
+        <span id="heartCount">0</span>
+      </div>
+      <div class="stat">
+        <span class="coin-emoji">🪙</span>
+        <span id="coinCount">100</span>
+      </div>
+      <div class="stat">
+        <span class="copy-emoji">📋</span>
+        <span id="copyCount">0</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-logo">🇧🇩</div>
+      <h1>Emergency Service Directory</h1>
+      <p class="slogan">Government Emergency Services at Your Fingertip — A Project by Govt.</p>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="main-container">
+    <section class="cards-column">
+      <div class="cards-grid" id="cardsGrid">
+        <!-- cards populated in HTML below for clarity -->
+        <!-- Card sample repeated (9 total) -->
+        <article class="card" data-service='{"name":"National Emergency Number","eng":"National Emergency","number":"999","category":"All"}'>
+          <div class="card-top">
+            <div class="card-icon">🚨</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">National Emergency Number</h3>
+          <div class="card-eng">National Emergency</div>
+          <div class="card-number">999</div>
+          <div class="badge">All</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+
+        <article class="card" data-service='{"name":"Police Helpline Number","eng":"Police","number":"999","category":"Police"}'>
+          <div class="card-top">
+            <div class="card-icon">👮‍♂️</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">Police Helpline Number</h3>
+          <div class="card-eng">Police</div>
+          <div class="card-number">999</div>
+          <div class="badge">Police</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+
+        <article class="card" data-service='{"name":"Fire Service Number","eng":"Fire Service","number":"999","category":"Fire"}'>
+          <div class="card-top">
+            <div class="card-icon">🔥</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">Fire Service Number</h3>
+          <div class="card-eng">Fire Service</div>
+          <div class="card-number">999</div>
+          <div class="badge">Fire</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+
+        <article class="card" data-service='{"name":"Ambulance Service","eng":"Ambulance","number":"1994-999999","category":"Health"}'>
+          <div class="card-top">
+            <div class="card-icon">🚑</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">Ambulance Service</h3>
+          <div class="card-eng">Ambulance</div>
+          <div class="card-number">1994-999999</div>
+          <div class="badge">Health</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+
+        <article class="card" data-service='{"name":"Women & Child Helpline","eng":"Women & Child Helpline","number":"109","category":"Help"}'>
+          <div class="card-top">
+            <div class="card-icon">👩‍👧</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">Women & Child Helpline</h3>
+          <div class="card-eng">Women & Child Helpline</div>
+          <div class="card-number">109</div>
+          <div class="badge">Help</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+
+        <article class="card" data-service='{"name":"Anti-Corruption Helpline","eng":"Anti-Corruption","number":"106","category":"Govt."}'>
+          <div class="card-top">
+            <div class="card-icon">🛡️</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">Anti-Corruption Helpline</h3>
+          <div class="card-eng">Anti-Corruption</div>
+          <div class="card-number">106</div>
+          <div class="badge">Govt.</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+
+        <article class="card" data-service='{"name":"Electricity Helpline","eng":"Electricity Outage","number":"16216","category":"Electricity"}'>
+          <div class="card-top">
+            <div class="card-icon">💡</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">Electricity Helpline</h3>
+          <div class="card-eng">Electricity Outage</div>
+          <div class="card-number">16216</div>
+          <div class="badge">Electricity</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+
+        <article class="card" data-service='{"name":"BRAC Helpline","eng":"BRAC","number":"16445","category":"NGO"}'>
+          <div class="card-top">
+            <div class="card-icon">🏢</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">BRAC Helpline</h3>
+          <div class="card-eng">BRAC</div>
+          <div class="card-number">16445</div>
+          <div class="badge">NGO</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+
+        <article class="card" data-service='{"name":"Bangladesh Railway Helpline","eng":"Bangladesh Railway","number":"163","category":"Travel"}'>
+          <div class="card-top">
+            <div class="card-icon">🚆</div>
+            <button class="card-heart" aria-label="Add heart">💗</button>
+          </div>
+          <h3 class="card-name">Bangladesh Railway Helpline</h3>
+          <div class="card-eng">Bangladesh Railway</div>
+          <div class="card-number">163</div>
+          <div class="badge">Travel</div>
+          <div class="card-actions">
+            <button class="copy-btn">📋 Copy</button>
+            <button class="call-btn">📞 Call</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HISTORY -->
+    <aside class="history">
+      <div class="history-head">
+        <div class="history-title">🕘 Call History</div>
+        <button id="clearHistory" class="clear-btn">Clear</button>
+      </div>
+      <div id="historyList" class="history-list">
+        <div class="empty-note">No calls yet.</div>
+      </div>
+    </aside>
+  </main>
+   <script  src="./script/index.js"></script>
+</body>
+</html>
