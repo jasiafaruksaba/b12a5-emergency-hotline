@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap');
+
+.hind-madurai-light {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* NAVBAR */
 .navbar{
   display:flex;
@@ -10,31 +18,94 @@
   top:0;
   z-index:10;
 }
-.logo-wrap{display:flex;align-items:center;gap:12px}
-.logo-circle{
-  width:44px;height:44px;background:linear-gradient(180deg,#0f7a3a,#0c5b2a);
-  color:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;
+.logo-wrap{
+  display:flex;
+  align-items:center;
+  gap:12px;
 }
-.site-title .title{font-weight:700}
-.site-title .subtitle{font-size:12px;color:#6a7a6f}
+.site-logo img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+ .title{
+  font-weight:900;
+  color:#006747 ;
+}
+ .nav-right{
+  display: flex;
+  gap: 10px;
+ }
 
-.nav-right{display:flex;gap:18px;align-items:center}
-.stat{display:flex;align-items:center;gap:6px;background:#f6fff8;padding:6px 10px;border-radius:999px;border:1px solid rgba(0,0,0,0.04)}
+.nav-right img{
+ 
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+ 
+}
+.stats{
+    display:flex;
+  align-items:center;
+  gap:6px;
+  background-color:#c8f5d2 ;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px ;
+  font-weight: 600;
+}
+.stat{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  background:#00A63E;
+  padding:6px 10px;
+  border-radius:999px;
+  color: #fff;
+  border:1px solid rgba(0,0,0,0.04)
+ 
+}
 
 /* HERO */
 .hero{
-  background:linear-gradient(90deg, rgba(6,122,59,0.95), rgba(2,96,44,0.95));
-  color:#fff;padding:36px 18px;border-bottom-left-radius:12px;border-bottom-right-radius:12px;
+  background:linear-gradient(90deg, rgba(2, 41, 19, 0.95), rgba(4, 99, 47, 0.95), rgba(2, 41, 19, 0.95));
+  color:#fff;
+  padding:36px 18px;
+  border-bottom-left-radius:12px;
+  border-bottom-right-radius:12px;
   box-shadow:0 8px 40px rgba(13,54,32,0.12);
 }
-.hero-inner{max-width:1100px;margin:0 auto;text-align:center;padding:18px}
-.hero-logo{font-size:34px;margin-bottom:8px}
-.hero h1{margin:6px 0;font-size:26px}
-.slogan{opacity:0.9;margin-top:6px}
+.hero-inner{
+  max-width:1100px;
+  margin:0 auto;
+  text-align:center;
+  padding:18px
+}
+.hero-logo{
+  font-size:34px;
+  margin-bottom:4px
+}
+.hero-logo img{
+  width: 60px;
+  height: auto;
+}
+.hero h1{
+  margin:6px 0;
+  font-size:26px
+}
+.slogan{
+  opacity:0.9;
+  margin-top:6px
+}
 
 /* MAIN layout */
 .main-container{
-  max-width:1100px;margin:18px auto;display:grid;grid-template-columns:1fr 320px;gap:18px;padding:0 12px;
+  max-width:1100px;
+  margin:18px auto;
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:18px;
+  padding:0 12px;
 }
 
 /* Cards column */
@@ -51,7 +122,11 @@
   display:flex;flex-direction:column;gap:8px;
 }
 .card-top{display:flex;justify-content:space-between;align-items:flex-start}
-.card-icon{font-size:26px;background:#fff;padding:8px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.03)}
+.card-icon img{
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
 .card-heart{background:transparent;border:none;font-size:18px;cursor:pointer}
 .card-name{margin:6px 0 0;font-size:15px;font-weight:700}
 .card-eng{font-size:13px;color:var(--muted)}
@@ -59,8 +134,12 @@
 .badge{display:inline-block;margin-top:6px;padding:6px 8px;border-radius:999px;background:#f1fbef;color:#0b4d2a;font-size:12px;width:max-content}
 .card-actions{margin-top:auto;display:flex;gap:8px}
 .card-actions button{flex:1;padding:8px 10px;border-radius:8px;border:1px solid rgba(0,0,0,0.05);cursor:pointer;font-weight:600}
-.copy-btn{background:#fff}
-.call-btn{background:#0a8c3b;color:#fff;border:none}
+.copy-btn{
+  background:#fff;
+  
+  border:gray;
+}
+.call-btn{background:#00A63E;color:#fff;border:none}
 
 /* History panel */
 .history{
@@ -69,7 +148,7 @@
 }
 .history-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 .history-title{font-weight:700}
-.clear-btn{background:#e9f6ee;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+.clear-btn{background:#00A63E;border:none;padding:12px 16px;border-radius:20px;cursor:pointer;color: #fff;}
 .history-list{overflow:auto;display:flex;flex-direction:column;gap:10px}
 .history-item{display:flex;justify-content:space-between;align-items:center;padding:8px;border-radius:8px;background:#f7fff7;border:1px solid rgba(0,0,0,0.03)}
 .history-item .meta{font-size:13px;color:#234a2b}
